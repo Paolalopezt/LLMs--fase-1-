@@ -1,0 +1,12 @@
+Regresión: Selección de Variables por Correlación
+Contexto: Antes de entrenar un modelo, es vital eliminar variables que no aportan información o que son redundantes. Debes identificar qué variables tienen la relación lineal más fuerte con el objetivo.
+
+Nombre de la función: seleccionar_top_correlacion
+
+Argumentos: * df (pd.DataFrame): El dataset completo.
+
+target_col (str): El nombre de la columna objetivo.
+
+k (int): Número de variables a seleccionar.
+
+Retorno: np.ndarray (Un array con los nombres de las k columnas que tienen el valor absoluto de correlación de Pearson más alto con el target).
