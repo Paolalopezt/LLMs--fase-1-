@@ -1,0 +1,10 @@
+Clasificación: Evaluación de Modelo Balanceado
+Contexto: En problemas de detección de fraude o fallos de maquinaria, las clases suelen estar muy desbalanceadas. No basta con medir el "accuracy"; necesitas calcular qué tan bien identifica el modelo la clase positiva específicamente.
+
+Nombre de la función: evaluar_precision_positiva
+
+Argumentos: * y_real (np.ndarray): Etiquetas reales (0 o 1).
+
+y_pred (np.ndarray): Predicciones del modelo.
+
+Retorno: float (El valor de la métrica Precision o Valor Predictivo Positivo para la clase 1).
