@@ -1,0 +1,10 @@
+Clustering: Cálculo de la Inercia para el Método del Codo
+Contexto: Para decidir cuántos grupos (clusters) existen en un conjunto de datos sin etiquetas, se suele ejecutar el algoritmo K-Means varias veces y medir la cohesión de los grupos.
+
+Nombre de la función: calcular_inercia_clusters
+
+Argumentos: * X (np.ndarray): Matriz de datos.
+
+n_clusters (int): El número de centros a probar.
+
+Retorno: float (La suma de los cuadrados de las distancias de las muestras a su centro de cluster más cercano, obtenida del atributo inertia_ de sklearn).
