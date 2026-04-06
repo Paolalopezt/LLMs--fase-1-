@@ -1,1 +1,8 @@
+Preprocesamiento: Escalado Robusto de Características
+Contexto: En conjuntos de datos con muchos valores atípicos (outliers), los escaladores estándar como Min-Max fallan. Tu objetivo es normalizar los datos usando estadísticas robustas (mediana y rango intercuartílico) para que las variables tengan una escala comparable.
 
+Nombre de la función: escalar_caracteristicas_robustas
+
+Argumentos: df (pd.DataFrame) con columnas numéricas.
+
+Retorno: np.ndarray (Matriz de datos transformados donde cada columna tiene mediana 0 y varianza robusta 1).
