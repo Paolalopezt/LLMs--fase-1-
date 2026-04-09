@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-def generate_usecase():
+def generate_use_case():
     rows = 20
     df = pd.DataFrame({
         'feature_1': np.random.normal(100, 10, rows),
