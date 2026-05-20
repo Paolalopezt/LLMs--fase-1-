@@ -5,6 +5,7 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 
 def segmentar_rutas(X, random_state=42):
+    X = np.array(X)
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
     mejor_k, mejor_score, mejor_etiquetas = None, -np.inf, None
